@@ -2,7 +2,7 @@
 #include<iterator>
 template <class Compare, class ForwardIterator>
 void
-bubble_sort(ForwardIterator first, ForwardIterator last, Compare comp) {
+bubble_sort(ForwardIterator first, ForwardIterator last, Compare comp) { //[first, last)
 	if (first == last) //zero elements
 		return;
 	for (bool swapped = true; swapped; ) {
