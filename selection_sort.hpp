@@ -2,7 +2,7 @@
 #include<iterator>
 template <class Compare, class ForwardIterator>
 void
-selection_sort(ForwardIterator first, ForwardIterator last, Compare comp) {
+selection_sort(ForwardIterator first, ForwardIterator last, Compare comp) { //[first, last)
 	for (; first != last; ++first) {
 		ForwardIterator iter_to_min = first, iter = first;
 		for (++iter; iter != last; ++iter)
