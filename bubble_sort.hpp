@@ -3,9 +3,9 @@
 template <class Compare, class ForwardIterator>
 void
 bubble_sort(ForwardIterator first, ForwardIterator last, Compare comp) {
-	if (first == last)
+	if (first == last) //zero elements
 		return;
-	for (bool swapped = true; swapped;) {
+	for (bool swapped = true; swapped; ) {
 		swapped = false;
 		ForwardIterator iter = first, prev_iter = first;
 		for (++iter; iter != last; ++prev_iter, ++iter)
